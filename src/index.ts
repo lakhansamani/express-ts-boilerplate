@@ -1,3 +1,4 @@
+import 'dotenv-safe/config'
 import express from 'express';
 
 const main = async () => {
