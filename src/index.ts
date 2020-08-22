@@ -9,7 +9,7 @@ const main = async () => {
   // add cors middleware
   app.use(cors());
 
-  // bind add to local port and start server
+  // bind port and start server
   const port = parseInt(process.env.PORT || '3000', 10);
   app.listen(port, () => {
     console.log(`🚀 server started on port: ${port}`);
