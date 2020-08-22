@@ -1,6 +1,7 @@
 import 'dotenv-safe/config';
 import express from 'express';
 import cors from 'cors';
+import bodyParser from 'body-parser';
 
 const main = async () => {
   // create express app
@@ -8,6 +9,9 @@ const main = async () => {
 
   // add cors middleware
   app.use(cors());
+
+  // add json body parser
+  app.use(bodyParser.json())
 
   // bind port and start server
   const port: number = parseInt(process.env.PORT || '3000', 10);
