@@ -11,7 +11,7 @@ const main = async () => {
   app.use(cors());
 
   // add json body parser
-  app.use(bodyParser.json())
+  app.use(bodyParser.json());
 
   // bind port and start server
   const port: number = parseInt(process.env.PORT || '3000', 10);
